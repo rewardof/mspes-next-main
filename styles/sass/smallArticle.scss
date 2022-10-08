@@ -1,0 +1,119 @@
+.small_article {
+  display: flex;
+  align-items: flex-start;
+  min-height: 126px;
+  max-width: 50%;
+  margin-bottom: 3rem;
+
+  .img_box {
+    margin-right: 1rem;
+    img {
+      width: 150px;
+      height: 96px;
+      border-radius: 7px;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 24px;
+      max-height: 320px;
+    }
+  }
+  .trending_data {
+    .category {
+      display: flex;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 4px;
+      .name {
+        color: #222;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 0 5px;
+      }
+      .create_date {
+        color: #999;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 0 5px;
+      }
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      max-width: 100%;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 22px;
+      color: #222;
+      &:hover {
+        color: #666;
+      }
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      .authoe_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 45px;
+        min-height: 45px;
+        border-radius: 50%;
+        background-color: rgb(24, 166, 209);
+        margin-right: 10px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .name {
+        font-size: 12px;
+        font-weight: 400;
+        color: #000;
+        font-weight: 700;
+        display: block;
+        line-height: 1;
+        display: -webkit-box;
+        max-width: 90%;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .position {
+        font-size: 13px;
+        color: #888;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.category_box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 112px;
+}
+
+.category-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
